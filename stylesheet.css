@@ -1,0 +1,52 @@
+\*
+<link rel="stylesheet" type="text/css" href="stylesheet.css"  />
+*\
+
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+.header{
+
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+.hidden{
+  visibility: hidden;
+}
+
+.unhidden{
+  visibility: visible;
+  display: table-row;
+  height: 50%;
+}
+.unhidden:nth-child(1) {
+  background-color: #eee;
+}
+
+.unhidden:nth-child(2) {
+  background-color: #ddd;
+}
+div.polaroid {
+  width: 284px;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color:  #ADD8E6;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+div.rotate_right {
+  float: left;
+ 
+ 
+  transform: rotate(7deg);
+}
+
+div.rotate_left {
+  float: left;
+  background-color:   #ADD8E6;
+  transform: rotate(-8deg);

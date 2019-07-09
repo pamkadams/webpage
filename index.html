@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+function unhide(divID) {
+var item = document.getElementById(divID);
+if (item) {
+item.className=(item.className=='hidden')?'unhidden':'hidden';
+}
+}
+</script>
+
+<head>
+<script type="text/javascript" src="flashing.js"></script>
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "stylesheet.css" />
+
+
+<title><About Pam!</title>
+</head>
+
+<body>
+<div class="header">
+<h1>About Pam!</h1>	
+
+
+
+<a href = "#bucket" onClick="highlight(document.getElementById('bucket'));">
+<div class="polaroid rotate_right">
+  		<img src="bucket.png"  width="284" height=auto>
+  		<p class="caption">Pam's coding bucket list</p>		 
+</div>
+</a>
+<a href = "https://www.codewars.com/users/pkadams@epotential.com/completed">
+<div class="polaroid rotate_left">
+  		<img src="js.png"  width="284" height=auto>
+  		<p class="caption">Some of Pam's code</p>
+</div>
+</a>
+  		<img src="Pam.png" id="pixPam" width="236" height=auto>
+  		<p class="caption"> Hi, I'm Pam. Welcome to my page!</p>
+
+		 <form action="javascript:unhide('todate');">
+         <button type="submit">Pam's Coding Activities
+      </form>
+	 <form action="javascript:unhide('contact');">
+         <button type="submit">Contact Pam
+
+      </form>
+
+
+		 
+</div>
+
+<div id="todate" class="hidden" style="width: 38%; float:left">  		
+  		<h2 >What I have done so far….</h2>
+	<ul>
+  		<li>Codewars (progressed to Kyu 5)</li>
+		<li>Eloquent Javascript - first four chapters</li>
+	  	<li>Follow <a href= "https://medium.com/@_ericelliott" title= "Eric Elliott's blog on Medium">Eric Elliott</a> on Medium </li>
+	  	<li>Built this page.</li>
+</ul>
+</div>
+
+<div id="contact" class="hidden" >
+	<h2>Pam's Contact Information</h2>
+		<p>pkadams@epotential.com</p>
+		<p>381 Chestnut Hill Rd.</p>
+		<p>Norwalk, CT 06851</p>
+		<p>240 328 2573</p>
+
+</div>
+
+<div class="body" id="bucket" style="float:left"> 
+<p>On my learning to code bucket list:</p>
+<ol>
+<li> There are <a href = "https://medium.com/javascript-scene/12-books-every-javascript-developer-should-read-9da76157fb3">12 books </a>Eric Elliott suggests to read. I will start at the beginning there and with <a href= "https://nostarch.com/javascriptforkids" title="No Starch Press">Javascript for Kids</a> from No Starch Press.</li>
+<li>  Figure out how to start a portfolio and build <a href = "https://www.ideaswatch.com/startup-ideas/web-application#" title="Ideas Watch">something</a>.
+</li>
+<li>  Identify an <a href= "https://up-for-grabs.net/#/filters?tags=javascript">open source project</a> and figure out what projects I want to develop while at bootcamp. 
+</li>
+<li>  Build out my own site - so do a quick dive into CSS and HTML.
+</li>
+<li>  Rewrite my notes into a handy reference guide for me.
+</li>
+<li>  Evaluate companies that I may want to join after finishing bootcamp.</li>
+
+
+
+</body>
+</html>
